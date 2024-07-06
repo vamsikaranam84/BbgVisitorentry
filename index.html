@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="stylee.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>BBG Visitor Entry</header>
+      <form method="POST" action="connection.php">
+        <div class="input-box">
+          <label for="name">Full Name</label>
+          <input type="text" placeholder="Enter full name" required name="name" id="name" />
+        </div>
+        <div class="column">
+            <div class="input-box">
+              <label for="mobilenumber">Phone Number</label>
+              <input type="number" placeholder="Enter phone number" maxlength="10" required name="mobilenumber" id="mobilenumber"  />
+            </div>
+            <div class="input-box">
+              <label for="datetime">DateTime</label>
+              <input type="datetime-local" placeholder="Enter datetime" name="datetime" required id="datetime" />
+            </div>
+        </div>
+        <div class="input-box address">
+            <label for="office">Office Type</label>
+            <div class="column" >
+              <div class="select-box"  >
+                <select name="office" id="office" required>
+                  <option hidden value="Not selected"  >Select Your Office</option>
+                  <option value="KPHB">KPHB</option>
+                  <option value="Jubliee Hills 2nd Floor">Jubliee Hills 2nd Floor</option>
+                  <option value="Jubliee Hills 3rd Floor">Jubliee Hills 3rd Floor</option>
+                  <option value="LB Nagar">LB Nagar</option>
+                  <option value="VIZAG">VIZAG</option>
+                  <option value="Vizinagaram">Vizinagaram</option>
+                  <option value="Srikakulam">Srikakulam</option>
+                  <option value="Khammam">Khammam</option>
+                  <option value="Warangal">Warangal</option>
+                  <option value="Mahabubnagar">Mahabubnagar</option>
+                  <option value="Kurnool">Kurnool</option>
+                  <option value="Nellore">Nellore</option>
+                </select>
+              </div>
+            </div>
+        </div>
+        <div class="input-box address">
+            <label for="team">Team Name</label>
+            <div class="column">
+              <div class="select-box">
+                <select name="team" id="team">
+                  <option hidden>Select Your Team</option>
+                  <option value="ADHIPATHI">ADHIPATHI</option>
+                  <option value="AVENGERS">AVENGERS</option>
+                  <option value="AACHARYA">AACHARYA</option>
+                  <option value="BAADSHA">BAADSHA</option>
+                  <option value="BAAHUBALI">BAAHUBALI</option>
+                  <option value="BUSINESSMAN">BUSINESSMAN</option>
+                  <option value="BALAGAM">BALAGAM</option>
+                  <option value="DOOKUDU">DOOKUDU</option>
+                  <option value="GAME CHANGERS">GAME CHANGERS	</option>
+                  <option value="HEROS">HEROS</option>
+                  <option value="JALSA">JALSA</option>
+                  <option value="LEGENDS">LEGENDS</option>
+                  <option value="MAGADHEERA">MAGADHEERA</option>
+                  <option value="RACE GURRAM">RACE GURRAM	</option>
+                  <option value="ROCK STARS">ROCK STARS</option>
+                  <option value="ROLE MODEL">ROLE MODEL</option>
+                  <option value="SARILERU NEEKEVVARU">SARILERU NEEKEVVARU	</option>
+                  <option value="SWAYAMKRUSHI">SWAYAMKRUSHI	</option>
+                  <option value="VIJETHA">VIJETHA	</option>
+                  <option value="YAGNAM	">YAGNAM</option>
+                  <option value="ZERO TO HERO	">ZERO TO HERO</option>
+                  <option value="WIN TO WIN	">WIN TO WIN	</option>
+                  <option value="SOURYA">SOURYA</option>
+                  <option value="YODHA">YODHA</option>
+                  <option value="SREERUDRA">SREERUDRA</option>
+                  <option value="SHINING STARS">SHINING STARS	</option>
+                  <option value="LEADERS">LEADERS</option>
+                  <option value="MEGA">MEGA</option>
+                  <option value="SHOURYA">SHOURYA</option>
+                  <option value="SUN RISERS	">SUN RISERS	</option>            
+                </select>
+              </div>
+            </div>            
+        </div>
+        <div class="visitor-box">
+          <h3>Visitor Type</h3>
+          <div class="visitor-option">
+            <div class="visitor">
+              <input type="radio" value="Associate Exsting" id="check-Associate Exsting" name="visitor" id="" checked />
+              <label for="check-Associate Exsting">Associate Exsting</label>
+            </div>
+            <div class="visitor">
+              <input type="radio" value="Associate New" id="check-Associate New" name="visitor" checked />
+              <label for="check-Associate New">Associate New</label>
+            </div>
+            <div class="visitor">
+              <input type="radio" value="Vendor" id="check-Vendor" name="visitor" checked />
+              <label for="check-Vendor">Vendor</label>
+            </div>
+            <div class="visitor">
+              <input type="radio" value="Customer" id="check-Customer" name="visitor" checked />
+              <label for="check-Customer">Customer</label>
+            </div>
+            <div class="visitor">
+                <input type="radio" value="Guest" id="check-Guest" name="visitor" checked />
+                <label for="check-Guest">Guest</label>
+            </div>
+          </div>
+        </div>
+        <div class="visitor-box">
+            <h3>Gender</h3>
+            <div class="visitor-option">
+              <div class="visitor">
+                <input type="radio" id="check-Male" name="gender" value="Male" checked, required />
+                <label for="check-Male">Male</label>
+              </div>
+              <div class="visitor">
+                <input type="radio" id="check-Female" name="gender" value="Female" checked ,required />
+                <label for="check-Female">Female</label>
+              </div>
+              <div class="visitor">
+                <input type="radio" id="check-Others" name="gender" value="Others" checked,required />
+                <label for="check-Others">Others</label>
+              </div>
+            </div>
+          </div>
+        <div class="input-box address">
+          <label for="address">Address</label>
+          <input type="text" placeholder="Enter street address" required name="address" id="address" />
+          <div class="column">
+            <div class="select-box">
+              <label for="state">State</label>
+              <select name="state" id="state">
+                <option hidden value="Not select">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Telengana">Telengana</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="whometomeet">Whome To Meet</label>
+            <input type="text" placeholder="Enter Whome to meet" required name="whometomeet" id="whometomeet" />
+          </div>
+        </div>
+        <button type="submit" id="submit" name="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
